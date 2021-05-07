@@ -1,0 +1,58 @@
+:root {
+  --color-black-first: #000;
+  --color-black-second: #3A4042;
+  --color-black-third: #828282;
+  --color-first: #BF612A;
+  --color-second: #02735E;
+  --color-third: #FFFFFF;
+  --color-error: #BA1F33;
+  --color-success: #62C370;
+  --color-warning: #CEB02A;
+  --color-fourth: #4C5B84;
+  --color-fourth: #01534D;
+  --color-fifth: #63371E;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background: var(--color-second);
+  border-bottom: 10px solid var(--color-black-first);
+  padding: 10px 20px;
+}
+
+nav {
+  text-align: right;
+}
+
+nav a{
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-third);
+  font-size: 20px;
+  font-family: "Fira Code", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+a::before {
+  content: "";
+  background: var(--color-first);
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+}
+
+#cvButton {
+ display: inline-block;
+ background: var(--color-first);
+ padding: 18px 20px;
+ box-shadow: 5px 5px 2px var(--color-black-first);
+ opacity: 82%;
+}
+
+#cvButton:hover {
+  font-weight: 700;
+  opacity: 100%;
+}

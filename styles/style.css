@@ -227,8 +227,9 @@ h1 {
   color: #CCC;
   font-size: 30px;
   font-weight: 100;
-  margin: 80px 80px 0 80px;
+  margin: 80px 130px 0 130px;
   text-align: justify;
+  line-height: 1.5;
 }
 
 .section.-third a {
@@ -239,42 +240,79 @@ h1 {
   padding: 0;
 }
 
-.carousel-year {
+.main-carousel {
   display: flex;
   justify-content: space-around;
+  position: relative;
 }
 
-.carousel-separator {
-  width: 100%;
-  margin-top: 10px;
-  margin-bottom: 40px;
+.main-carousel::after {
+  content: '';
+  position: absolute;
+  left: 40px;
+  top: 48px;
+  display: block;
+  height: 5px;
+  width: calc(100% - 100px);
+  background-color: #000;
 }
 
-.wrapper-carousel-img {
-  display: flex;
-  justify-content: space-around;
+.main-carousel::before {
+  content: '';
+  position: absolute;
+  left: auto;
+  top: 48px;
+  display: block;
+  width: 99%;
+  border: 2.5px dashed #000;
 }
 
-.carousel-img {
-  display: flex;
+.node-card {
+  display: inline-flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: var(--color-fourth);
-  width: 120px;
-  height: 120px;
+  position: relative;
 }
 
-.carousel-img img {
-  width: 80px;
-  padding: 7px;
+.node-card .logo {
+  background: #4C5B84;
 }
 
-.carousel-img.-inside {
+.node-card .logo.-inside {
   background: #592E84;
 }
 
-.carousel-img.-semEmprego {
+.node-card .logo.-semEmprego {
   background: #F25A6F;
+}
+
+.node-card::before {
+  content: '';
+  position: absolute;
+  height: 0px;
+  width: 40px;
+  border: 2.5px dashed #000;
+  transform: rotate(90deg);
+  bottom: 140px; 
+}
+
+.node-card .title {
+  margin-bottom: 50px;
+}
+
+.node-card .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border: 4px solid #000;
+}
+
+.node-card img {
+  width: 80px;
+  padding: 7px;
 }
 
 .section.-fourth {
@@ -299,8 +337,16 @@ h1 {
   margin-bottom: 20px;
 }
 
+.form-contact input::placeholder {
+  font-size: 16px;
+}
+
 .form-contact textarea {
   border: 3px solid #222;
+}
+
+.form-contact textarea::placeholder {
+  font-size: 18px;
 }
 
 .buttons.-submit {
@@ -320,6 +366,13 @@ footer {
 }
 
 footer img {
-  width: 45px;
+  width: 35px;
   border-radius: 50%;
+
+  transition: transform 200ms linear;
+}
+
+
+footer img:hover {
+  transform: scale(1.2);
 }

@@ -8,7 +8,7 @@
 </head>
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@100;300;500;700&family=Roboto+Mono&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="./styles/reset.css">
 <link rel="stylesheet" href="./styles/style.css">
@@ -98,9 +98,106 @@
       </div>
       
     </section>
+
+    <section class="section -third">
+      <h2 class="main-title -second">Sobre</h2>
+      <div class="carousel-year">
+        <span>2015</span>
+        <span>2018</span>
+        <span>2019</span>
+        <span>2021</span>
+      </div>
+      <img class="carousel-separator" src="./assets/line.svg" alt="Linha separador">
+      <div class="wrapper-carousel-img">
+        <figure class="carousel-img">
+          <img src="./assets/unipar.png" alt="Logo Unipar">
+        </figure>
+        <figure class="carousel-img -inside">
+          <img src="./assets/inside.png" alt="Logo Inside Sistemas">
+        </figure>
+        <figure class="carousel-img -inside">
+          <img src="./assets/inside.png" alt="Logo Inside Sistemas">
+        </figure>
+        <figure class="carousel-img -semEmprego">
+          <img src="./assets/semEmprego.png" alt="Imagem com pontos de interrogação">
+        </figure>
+      </div>
+      <p>
+        &nbsp;&nbsp;Bruno Souza é formado em análise e desenvolvimento de sistemas pela Unipar em 2015, 
+        sendo a principal linguagem Java, não seguiu o caminho ideal para um programador, 
+        atuando em outras áreas, como produção de máquinas industriais e comunicação visual.
+        <br>
+        &nbsp;&nbsp;Em 2018 entrou em uma empresa de sistemas, atuando na área de Suporte ao Cliente,
+        de um sistema ERP para empresas de segurança eletrônica e rastreamento, 
+        conhecendo então a base principal de um sistema empresarial 
+        e como funciona a organização dentro de uma empresa com certificação GPTW.
+        <br>
+        &nbsp;&nbsp;Buscando novos conhecimentos e oportunidades, migrou para o setor de Customer Success (Sucesso do Cliente),
+        aprendendo então técnicas avançadas para negociações, retenção e marketing para clientes.
+        &nbsp;&nbsp;Ficando mais próximo ao time de desenvolvimento da empresa, 
+        entendeu o processo de análise para desenvolvimento de requisitos dos clientes.
+        <br>
+        Em 2021, saindo um pouco da zona de conforto, buscou cursos e especialização no mercado para então
+        entrar no mercado da tecnologia como programador.
+      </p>
+      <p>
+        &nbsp;&nbsp;Atualmente cursando o Ignite em ReactJS da 
+        <a href="https://rocketseat.com.br/" target="_blank">
+          <cite><strong>Rocketseat.</strong></cite>
+        </a>
+        E buscando parcerias para projetos e desenvolvimentos para crescimento no mercado e adquirir experiências na área.
+      </p>
+    </section>
+
+    <section class="section -fourth">
+      <form action="">
+        <fieldset class="form-contact">
+          <legend class="main-title -second">Contatos</legend>
+
+          <label for="name">Nome</label>
+          <input 
+            type="text" 
+            name="name" 
+            id="name" 
+            size="30" 
+            placeholder="Insira seu nome"
+            title="Insira um nome"
+          >
+          <label for="">E-mail</label>
+          <input 
+            type="email" 
+            name="email" 
+            id="email" 
+            size="23"
+            placeholder="Insira seu e-mail"
+            minlength="7" 
+            required
+            title="Insira um e-mail válido"
+          >
+          <label for="message">Mensagem</label>
+          <textarea 
+            name="message" 
+            id="message" 
+            cols="20" 
+            rows="10"
+            placeholder="Envie sua mensagem para Bruno Souza"
+            title="Escreva seu texto para o Bruno Souza"></textarea>
+        <br><br>
+        <button type="submit" class="buttons -submit">Enviar</button>
+        </fieldset>
+      </form>
+    </section>
   </main>
   <footer>
-
+    <a href="https://github.com/mrbrunosouza" target="_blank">
+      <img src="./assets/github.png" alt="Logo github">
+    </a>
+    <a href="https://www.linkedin.com/in/bruno-souzaa/" target="_blank">
+      <img src="./assets/linkedin.png" alt="Logo linkedin">
+    </a>
+    <a href="https://app.rocketseat.com.br/me/mr-bruno-souza" target="_blank">
+      <img src="./assets/rocket.png" alt="Logo rocketseat">
+    </a>
   </footer>
 </body>
 </html>

@@ -124,12 +124,12 @@ h1 {
 .section {
   background: var(--color-fifth);
   border-bottom: 10px solid var(--color-second);
-  padding: 50px 0 50px 0;
-  height: 740px;
+  padding: 50px 0 100px 0;
 }
 
 .section.-second {
   background: var(--color-black-first);
+  border-bottom: 10px solid var(--color-first);
 }
 
 /* Skills ----------------------------- */
@@ -213,4 +213,113 @@ h1 {
 
 .project.-third {
   background: #F25A6F;
+}
+
+.section.-third {
+  background: #01534D;
+  border-bottom: 10px solid var(--color-black-first);
+  font-family: Fira Code, sans-serif;
+  font-size: 36px;
+  color: var(--color-first);
+}
+
+.section.-third p {
+  color: #CCC;
+  font-size: 30px;
+  font-weight: 100;
+  margin: 80px 80px 0 80px;
+  text-align: justify;
+}
+
+.section.-third a {
+  color: #CCC;
+  font-size: 30px;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-year {
+  display: flex;
+  justify-content: space-around;
+}
+
+.carousel-separator {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.wrapper-carousel-img {
+  display: flex;
+  justify-content: space-around;
+}
+
+.carousel-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-fourth);
+  width: 120px;
+  height: 120px;
+}
+
+.carousel-img img {
+  width: 80px;
+  padding: 7px;
+}
+
+.carousel-img.-inside {
+  background: #592E84;
+}
+
+.carousel-img.-semEmprego {
+  background: #F25A6F;
+}
+
+.section.-fourth {
+  background: var(--color-black-second);
+  border-bottom: none;
+}
+
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px 40px 40px;
+  font-family: Fira Code, sans-serif;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 100;
+  margin: 40px;
+}
+
+.form-contact input {
+  height: 45px;
+  border: 3px solid #222;
+  margin-bottom: 20px;
+}
+
+.form-contact textarea {
+  border: 3px solid #222;
+}
+
+.buttons.-submit {
+  color: var(--color-third);
+  font-size: 25px;
+  font-family: "Fira Code", sans-serif;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-black-first);
+  padding: 25px;
+}
+
+footer img {
+  width: 45px;
+  border-radius: 50%;
 }

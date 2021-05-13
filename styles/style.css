@@ -9,10 +9,11 @@
   --color-success: #62C370;
   --color-warning: #CEB02A;
   --color-fourth: #4C5B84;
-  --color-fourth: #01534D;
   --color-fifth: #63371E;
 }
 
+
+/* Header ---------------------------> */
 header {
   display: flex;
   justify-content: space-between;
@@ -25,7 +26,8 @@ nav {
   text-align: right;
 }
 
-nav a{
+/* Buttons and Links ---------------------------> */
+a{
   display: inline-flex;
   align-items: center;
   color: var(--color-third);
@@ -36,7 +38,7 @@ nav a{
   margin-right: 30px;
 }
 
-a::before {
+header a::before {
   content: "";
   background: var(--color-first);
   width: 10px;
@@ -44,15 +46,171 @@ a::before {
   margin-right: 10px;
 }
 
-#cvButton {
+.buttons {
  display: inline-block;
  background: var(--color-first);
  padding: 18px 20px;
  box-shadow: 5px 5px 2px var(--color-black-first);
- opacity: 82%;
+ height: 60px;
+ transition: transform 150ms linear;
 }
 
-#cvButton:hover {
+.buttons:hover {
   font-weight: 700;
   opacity: 100%;
+  transform: scale(1.04);
+}
+
+section .buttons {
+  opacity: 82%;
+  margin-right: 100px;
+}
+
+/* Titles ---------------------------> */
+
+h1 {
+  font-family: Roboto Mono, sans-serif;
+  font-weight: 300;
+  font-size: 72px;
+  color: var(--color-first);
+  text-shadow: 4px 4px 2px var(--color-black-first);
+}
+
+.main-title {
+  font-family: Roboto Mono, sans-serif;
+  font-weight: normal;
+  font-size: 36px;
+  color: var(--color-third);
+  text-shadow: 4px 4px 2px var(--color-black-first);  
+}
+
+.main-title.-second {
+  font-size: 72px;
+  font-family: Roboto Mono, sans-serif;
+  text-shadow: none;
+  text-align: center;
+}
+
+.section .main-title {
+  margin-bottom: 70px;
+}
+
+/* Sections ---------------------------> */
+
+.banner {
+  background: url("../assets/photo.svg") no-repeat;
+  background-size: cover;
+  height: 800px;
+  border-bottom: 10px solid var(--color-black-first);
+
+  padding: 570px 72px 0;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.boxName {
+  background: var(--color-black-second);
+  box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.8);
+  opacity: 90%;
+
+  text-align: center;
+  padding: 20px 40px;
+}
+
+.section {
+  background: var(--color-fifth);
+  border-bottom: 10px solid var(--color-second);
+  padding: 50px 0 50px 0;
+  height: 740px;
+}
+
+.section.-second {
+  background: var(--color-black-first);
+}
+
+/* Skills ----------------------------- */
+
+.skills-tec {
+  display: flex;
+  align-items: center;
+  font-family: Roboto Mono, sans-serif;
+  font-size: 36px;
+  color: var(--color-third);
+}
+
+.wrapper-skills {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.wrapper-skills .skills-tec {
+  width: 430px;
+  margin-bottom: 40px;
+}
+
+.wrapper-skills .skills-tec:nth-child(odd) {
+  margin-right: 100px;
+}
+
+.wrapper-skills .progress-bar {
+  width: 320px;
+}
+
+.skill-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.skill-icon {
+  margin-right: 25px;
+  width: 90px;
+  border-radius: 50%;
+}
+
+.skill-title {
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  border: 5px solid #000;
+  height: 40px;
+}
+
+.progress-bar::-webkit-progress-bar {
+  background: #fff;
+}
+
+.progress-bar::-webkit-progress-value {
+  background: var(--color-second);
+}
+
+.wrapper-projects {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 140px;
+}
+
+.wrapper-projects .project {
+  background: var(--color-second);
+  width: 280px;
+  height: 280px;
+  padding: 50px;
+  box-shadow: 10px 10px 2px var(--color-third);
+}
+
+.project.-second {
+  background: var(--color-fourth);
+  padding: 20px;
+}
+
+.project.-third {
+  background: #F25A6F;
 }
